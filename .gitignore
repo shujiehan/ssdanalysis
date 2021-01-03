@@ -1,0 +1,5 @@
+*.o
+results*/
+.DS_Store
+simedc
+*.pyc
