@@ -11,7 +11,7 @@ Proceedings of the 19th USENIX Conference on File and Storage Technologies (FAST
 
 ## Directories
 
-- `data/` ([dataset of SSD failures in Alibaba](https://github.com/alibaba-edu/dcbrain/tree/master/diskdata/ssd_open_data)) spans two years from Jan. 1, 2018 to Dec. 31, 2019, including 
+- `data/` ([dataset of SSD failures in Alibaba](https://github.com/alibaba-edu/dcbrain/tree/master/ssd_open_data)) spans two years from Jan. 1, 2018 to Dec. 31, 2019, including 
   - `ssd_failure_tag.tar.gz`: the SMART logs and trouble tickes for all SSD failures among the 11 drive models,
   - `location_info_of_ssd.tar.gz`: locations, and applications, for the 11 drive models, and
   - `smart_log_20191231.tar.gz`: the last day of SMART logs for all SSDs of the 11 drive models.
