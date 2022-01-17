@@ -263,7 +263,7 @@ def temporal_correlations(df, granularity):
     if granularity == 'model':
         sub_col_name = 'node_id'
         col_name = 'model'
-        time = [60, 1800, 3600*24, 3600*30]
+        time = [60, 1800, 3600*24, 3600*24*30]
         name = ['1min', '30min', '1d', '1m']
         res_df = pd.DataFrame()
         for i in range(4):
@@ -299,7 +299,7 @@ def temporal_correlations(df, granularity):
             df['lithography'] = df['lithography'].replace(key, value)
         sub_col_name = 'node_id'
         col_name = "lithography"
-        time = [60, 1800, 3600*24, 3600*30]
+        time = [60, 1800, 3600*24, 3600*24*30]
         name = ['1min', '30min', '1d', '1m']
         res_df = pd.DataFrame()
         for i in range(4):
@@ -335,7 +335,7 @@ def temporal_correlations(df, granularity):
             df['capacity'] = df['capacity'].replace(key, value)
         sub_col_name = 'node_id'
         col_name = "capacity"
-        time = [60, 1800, 3600*24, 3600*30]
+        time = [60, 1800, 3600*24, 3600*24*30]
         name = ['1min', '30min', '1d', '1m']
         res_df = pd.DataFrame()
         for i in range(4):
@@ -360,7 +360,7 @@ def temporal_correlations(df, granularity):
         df['age'] = df['age'].astype('int')
         sub_col_name = 'node_id'
         col_name = "age"
-        time = [60, 1800, 3600*24, 3600*30]
+        time = [60, 1800, 3600*24, 3600*24*30]
         name = ['1min', '30min', '1d', '1m']
         res_df = pd.DataFrame()
         for i in range(4):
@@ -384,7 +384,7 @@ def temporal_correlations(df, granularity):
         df = df[df['app'].isin(apps)]
         sub_col_name = 'node_id'
         col_name = "app"
-        time = [60, 1800, 3600*24, 3600*30]
+        time = [60, 1800, 3600*24, 3600*24*30]
         name = ['1min', '30min', '1d', '1m']
         res_df = pd.DataFrame()
         for i in range(4):
